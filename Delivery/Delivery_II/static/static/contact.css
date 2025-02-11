@@ -1,0 +1,64 @@
+/* contact.css - Add this in your <head> section */
+.contact-section {
+    padding: 4rem 0;
+}
+
+.contact-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 2.5rem;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.contact-form .form-control {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 12px 15px;
+    transition: all 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: none;
+}
+
+.contact-form label {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.contact-info {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info-item i {
+    font-size: 1.5rem;
+    color: #0d6efd;
+    margin-right: 1rem;
+    width: 40px;
+    text-align: center;
+}
+
+.submit-btn {
+    background: #0d6efd;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #0b5ed7;
+    transform: translateY(-2px);
+}
