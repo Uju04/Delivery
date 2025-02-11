@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" xml:th="https://www.thymleaf.org">
+  <head th:replace="Layout :: page_head" ><link rel="stylesheet" href="/vehicle.css"></head>
+<!--  <link rel="stylesheet" href="/vehicle.css">-->
+
+  <body>
+
+<!--  <nav th:replace="Layout :: page_navbar"></nav>-->
+ <nav th:replace="Layout::page_navbar"></nav>
+
+<div class="container">
+          <h1 class="text-center mb-5 display-3fw-bold text-primary">Vehicle</h1>
+
+        <form id="vehicleForm" class="mt-4">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="plateNumber">Plate Number:</label>
+                <input type="text" id="plateNumber" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="type">Type:</label>
+                <input type="text" id="type" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="carryingWeight">Carrying Weight (kg):</label>
+                <input type="number" id="carryingWeight" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="status">Status:</label>
+                <input type="text" id="status" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="fuelCapacity">Fuel Capacity (L):</label>
+                <input type="number" id="fuelCapacity" class="form-control" required>
+            </div>
+             <div class="form-group">
+                <label for="totalWeight">Total Weight (kg):</label>
+                <input type="number" id="totalWeight" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Vehicle</button>
+        </form>
+
+        <h2 class="mt-5">Available Vehicles</h2>
+        <table class="table table-bordered mt-3">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Plate Number</th>
+                    <th>Type</th>
+                    <th>Carrying Weight (kg)</th>
+                    <th>Status</th>
+                    <th>Fuel Capacity (L)</th>
+                    <th>Current Weight (kg)</th>
+                    <th>Total Weight (kg)</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="vehicleTableBody">
+                <!-- Vehicle rows will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+      <footer th:replace="Layout :: page_footer"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="/vehicle.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

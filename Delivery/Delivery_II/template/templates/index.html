@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" xml:th="http//www.thymeleaf.org">
+  <head th:replace="Layout::page_head">
+      <link rel="stylesheet" href="../static/index">
+  </head>
+  <body>
+
+  <nav th:replace="Layout::page_navbar"></nav>
+
+  <div class="container py-3">
+      <h1 class="text-center my-4"> Welcome to our  website.</h1>
+<p>This is a simple home page for your application.</p>
+    <button id="exploreButton" class="btn">Explore Items</button>
+  </div>
+
+   <footer  th:replace="Layout::page_footer">
+   </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
+<!--<head th:replace="Layout :: page_head">-->
+<!--    <link rel="stylesheet" href="/index.css"> &lt;!&ndash; Link to your CSS file &ndash;&gt;-->
+<!--    <title>Home Page</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<nav th:replace="Layout::page_navbar"></nav>-->
+
+<!--<div class="container">-->
+<!--    <h1>Welcome to the Home Page!</h1>-->
+<!--    <p>This is a simple home page for your application.</p>-->
+<!--    <button id="exploreButton" class="btn">Explore Items</button>-->
+<!--</div>-->
+
+<!--<footer th:replace="Layout :: page_footer"></footer>-->
+<!--<script src="/index.js"></script> &lt;!&ndash; Link to your JavaScript file &ndash;&gt;-->
+<!--</body>-->
+<!--</html>-->

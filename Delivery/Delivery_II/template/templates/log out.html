@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en" xml:th="https://www.thymleaf.org">
+  <head th:replace="Layout :: page_head"></head>
+  <link rel="stylesheet" href="/logout.css">
+  <body>
+
+<body>
+<nav th:replace="Layout::page_navbar"></nav>
+    <div class="container">
+        <h1>You have been logged out successfully!</h1>
+        <p>Thank you for using our application.</p>
+        <button id="loginAgainButton" class="btn">Login Again</button>
+    </div>
+
+    <script src="/logout.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

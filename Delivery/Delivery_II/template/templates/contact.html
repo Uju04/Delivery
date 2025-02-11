@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" xml:th="https://www.thymleaf.org">
+  <head th:replace="Layout :: page_head"></head>
+  <link rel="stylesheet" href="/contact.css">
+  <body>
+
+  <nav th:replace="Layout :: page_navbar"></nav>
+
+    <!-- Updated contact page HTML -->
+<div class="container py-5">
+    <h1 class="text-center mb-5 display-4 fw-bold text-primary">Contact Us</h1>
+
+    <div class="contact-card">
+        <div class="row g-5">
+            <!-- Contact Form -->
+            <div class="col-md-7">
+                <form class="contact-form needs-validation" novalidate>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                            <div class="invalid-feedback">Please enter your name</div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">Please enter a valid email</div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" required>
+                            <div class="invalid-feedback">Please enter a subject</div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                            <div class="invalid-feedback">Please enter your message</div>
+                        </div>
+
+                        <div class="col-12 text-end">
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-md-5">
+                <div class="contact-info">
+                    <h3 class="mb-4">Get in Touch</h3>
+                    <div class="contact-info-item">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <div>
+                            <h5>Our Office</h5>
+                            <p class="mb-0">123 Business Street<br>Bingham University</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="bi bi-telephone-fill"></i>
+                        <div>
+                            <h5>Call Us</h5>
+                            <p class="mb-0">08012345896</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="bi bi-envelope-fill"></i>
+                        <div>
+                            <h5>Email Us</h5>
+                            <p class="mb-0">bleblehbleh@company.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <footer th:replace="Layout :: page_footer"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="/contact.js"></script>
+  </body>
+</html>

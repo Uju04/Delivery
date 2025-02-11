@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xml:th="http://www.thymeleaf.org">
+<head th:replace="Layout :: page_head">
+    <link rel="stylesheet" href="/item.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+<nav th:replace="Layout::page_navbar"></nav>
+
+<div class="container mt-6">
+    <h1 class="text-center my-5">Items</h1>
+    <form id="itemForm">
+        <div class="mb-3">
+            <label for="itemName" class="form-label">Item Name:</label>
+            <input type="text" id="itemName" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="itemWeight" class="form-label">Item Weight (kg):</label>
+            <input type="number" id="itemWeight" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="code" class="form-label">Code:</label>
+            <input type="text" id="code" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Item</button>
+    </form>
+
+    <h3 class="mt-4">Items List</h3>
+       <table class="table">
+          <thead>
+              <tr>
+                <th>Item Name</th>
+                <th>Item Weight</th>
+                <th>Code</th>
+                <th>Action</th>
+              </tr>
+          </thead>
+         <tbody id="itemTableBody">
+            <!-- Item entries will be added here -->
+         </tbody>
+       </table>
+</div>
+
+    <footer th:replace="Layout :: page_footer"></footer>
+     <script src="/item.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
